@@ -3,3 +3,8 @@
   margin: 50px;
   border: 4px solid #222;
 }
+
+.data {
+  padding: 15px;
+  padding-block-start: 10px;
+}

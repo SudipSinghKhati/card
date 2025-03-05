@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Avatar from "./Avatar";
+import Details from "./Details";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -9,6 +10,9 @@ function App() {
   return (
     <div class="card">
       <Avatar />
+      <div className="data">
+        <Details />
+      </div>
     </div>
   );
 }
