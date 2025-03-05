@@ -1,4 +1,4 @@
-import "./avatar.css";
+import "./index.css";
 
 function Avatar() {
   return (

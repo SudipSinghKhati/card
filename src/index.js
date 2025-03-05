@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Avatar from "./Avatar";
 import Details from "./Details";
+import CourseList from "./courses";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -12,6 +13,7 @@ function App() {
       <Avatar />
       <div className="data">
         <Details />
+        <CourseList />
       </div>
     </div>
   );
