@@ -1,20 +1,22 @@
 import "./index.css";
-
+import { skills } from "./skill";
 function CourseList() {
   return (
     <div className="skill-list">
-      <Course skill="Nodejs" emoji="💪" color="Green" />
-      <Course skill="TypeScript" emoji="💪" color="Yellow" />
-      <Course skill="React" emoji="💪" color="Red" />
+      {skills.map((data) => (
+        <Course skill={data.skill} color={data.color} level={data.level} />
+      ))}
     </div>
   );
 }
 
-function Course(props) {
+function Course({ skill, color, level }) {
   return (
-    <div className="skill" style={{ backgroundColor: props.color }}>
-      <span>{props.skill}</span>
-      <span>{props.emoji}</span>
+    <div className="skill" style={{ backgroundColor: color }}>
+      <span>{skill}</span>
+      <span>{level === "basic" && "👼"}</span>
+      <span>{level === "mid" && "👨"}</span>
+      <span>{level === "strong" && "🧑"}</span>
     </div>
   );
 }
